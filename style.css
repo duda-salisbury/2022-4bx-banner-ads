@@ -40,8 +40,8 @@
     background-repeat:no-repeat;
 }
 
-.ad--ford .ad__decoration::before {
-    animation: animate infinite 5s;
+.ad--ford .ad__copy .adjective::before {
+    animation: ford-adjectives-animate infinite 5s;
 }
 
 .logo {
