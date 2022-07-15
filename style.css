@@ -31,19 +31,50 @@
     font-family: sans-serif;
 }
 
+/** First and Last keyframes need to be the same text for smoothness. **/
+
 @keyframes ford-adjectives-animate {
 
-    0% {
-        content: "Custom";
-    }
+      0% {
+        content: "classic";
+        opacity:1;
+      }
 
-    50% {
-        content: "Lifted";
-    }
+      12.5% {
+        opacity:0
+      }
 
-    75% {
-        content: "Rare";
-    }
+      25% {
+        content: "lifted";
+        opacity: 1;
+      }
+
+      37.5% {
+        opacity: 0;
+      }
+
+      50% {
+        content: "custom";
+        opacity: 1;
+      }
+
+      62.5% {
+        opacity: 0;
+      }
+
+      75% {
+        content: "badass";
+        opacity: 1;;
+      }
+
+      87.5% {
+        opacity: 0;
+      }
+
+      100% {
+        content: "classic";
+        opacity: 1;
+      }
 }
 
 
@@ -54,7 +85,8 @@
 }
 
 .ad--ford .ad__copy .adjective::before {
-    animation: ford-adjectives-animate infinite 5s;
+    animation: ford-adjectives-animate infinite 10s;
+    animation-timing-function: ease-in-out;
 }
 
 .logo {
