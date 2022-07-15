@@ -2,6 +2,7 @@
 
 .ad, .ad * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .ad {
@@ -13,9 +14,21 @@
     position:relative;
 }
 
+.ad .ad__cta a {
+    background-color:#df5826;
+    color:#fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    padding:7px 15px;
+    margin:0px 10px;
+}
+
 .ad .ad__copy .adjective::before {
     content: "Classic";
     padding-left:10px;
+    font-family: sans-serif;
 }
 
 @keyframes ford-adjectives-animate {
@@ -109,8 +122,6 @@
 }
 
 .ad--728w90h .ad__cta a {
-    display: inline-block;
-    width:100%;
     text-align: center;
 }
 
