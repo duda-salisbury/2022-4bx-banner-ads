@@ -1,4 +1,6 @@
-* {
+@charset "UTF-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+.ad, .ad * {
     box-sizing: border-box;
 }
 
@@ -8,6 +10,38 @@
     margin: 20px;
     display: flex;
     overflow: hidden;
+    position:relative;
+}
+
+.ad .ad__copy .adjective::before {
+    content: "Classic";
+    padding-left:10px;
+}
+
+@keyframes ford-adjectives-animate {
+
+    0% {
+        content: "Custom";
+    }
+
+    50% {
+        content: "Lifted";
+    }
+
+    75% {
+        content: "Rare";
+    }
+}
+
+
+.ad--ford .ad__decoration {
+    /* set background image to f150-1.jpg **/
+    background:url(f150-1.jpg);
+    background-repeat:no-repeat;
+}
+
+.ad--ford .ad__decoration::before {
+    animation: animate infinite 5s;
 }
 
 .logo {
@@ -16,6 +50,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
+    position: absolute;
 }
 
 .logo img {
@@ -29,7 +64,56 @@
 
 .ad--728w90h .logo {
     width: 100px;
+    bottom:0px;
+    left:0px;
+    top:0px;
 }
+
+.ad--728w90h .ad__decoration {
+    width:360px;
+    height:90px;
+    background-size: auto 300%;
+    background-position: 30px 57%;
+}
+
+.ad--728w90h .ad__copy {
+    padding:10px;
+   
+}
+
+.ad--728w90h .ad__copy h1{
+    transform:rotate(-15deg);
+    line-height: 32px;
+    
+}
+
+.ad--728w90h .ad__copy .adjective{
+    transform:rotate(-15deg);
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    line-height: 32px;
+    width:100px;
+}
+
+.ad--728w90h .ad__cta {
+    display: block;
+    height:90px;
+    text-align: center;
+    padding-top:30px;
+    position:absolute;
+    left:560px;
+    top:0px;
+    bottom:0px;
+    right:0px;
+}
+
+.ad--728w90h .ad__cta a {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+}
+
 
 .ad--300w250h {
     width: 300px;
