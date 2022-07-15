@@ -1,8 +1,13 @@
-@charset "UTF-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
 .ad, .ad * {
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+.ad h1, .ad h2, .ad h3, .ad h4, .ad h5, .ad h6{
+    font-size: 14px;
+    margin:0px;
+    padding:0px;
 }
 
 .ad {
@@ -85,7 +90,7 @@
 }
 
 .ad--ford .ad__copy .adjective::before {
-    animation: ford-adjectives-animate infinite 10s;
+    animation: ford-adjectives-animate infinite 14s;
     animation-timing-function: ease-in-out;
 }
 
@@ -123,22 +128,29 @@
 
 .ad--728w90h .ad__copy {
     padding:10px;
-   
+    transform: rotate(-11deg);
+    position: relative;
+    left:20px;
+    top:8px;
 }
 
 .ad--728w90h .ad__copy h1{
-    transform:rotate(-15deg);
-    line-height: 32px;
-    
+    line-height: 22px;
+}
+
+.ad--728w90h .ad__copy .model{
+    line-height: 22px;
+    display: inline-block;
 }
 
 .ad--728w90h .ad__copy .adjective{
-    transform:rotate(-15deg);
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     display: inline-block;
-    line-height: 32px;
+    line-height: 22px;
     width:100px;
+    text-align: right;
+    padding-right:7px;
 }
 
 .ad--728w90h .ad__cta {
