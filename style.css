@@ -45,6 +45,7 @@
 .ba .ba__copy .adjective::before {
     content: "Classic";
     font-family: 'Yellowtail', cursive;
+    color:#df5826;
     font-size: 34px;
     letter-spacing: 2px;
     animation: fe-adjectives-animate infinite 14s;
