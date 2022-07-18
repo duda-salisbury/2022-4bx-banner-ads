@@ -1,48 +1,51 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Yellowtail&display=swap');
 
-.ad, .ad * {
+.ba,
+.ba * {
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
 
-.ad h1, .ad h2, .ad h3, .ad h4, .ad h5, .ad h6{
+.ba h1,
+.ba h2,
+.ba h3,
+.ba h4,
+.ba h5,
+.ba h6 {
     font-size: 14px;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
-.ad {
+.ba {
     border: 1px solid #000;
     background-color: #f7f9fb;
     margin: 20px;
     display: flex;
     overflow: hidden;
-    position:relative;
+    position: relative;
 }
 
-.ad .ad__cta a {
-    background-color:#df5826;
-    color:#fff;
+.ba .ba__cta a {
+    background-color: #df5826;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 30px;
-    padding:7px 15px;
-    margin:0px 10px;
+    padding: 7px 15px;
+    margin: 0px 10px;
 }
 
-.ad .ad__copy .adjective {
+.ba .ba__copy .adjective {
     font-family: 'Yellowtail', cursive;
-    
+
 }
 
-.ad .ad__copy .adjective::before {
+.ba .ba__copy .adjective::before {
     content: "Classic";
-    
-    
     font-family: 'Yellowtail', cursive;
-    font-size:34px;
+    font-size: 34px;
     letter-spacing: 2px;
 }
 
@@ -50,57 +53,67 @@
 
 @keyframes ford-adjectives-animate {
 
-      0% {
+    0% {
         content: "classic";
-        opacity:1;
-      }
-
-      12.5% {
-        opacity:0
-      }
-
-      25% {
-        content: "lifted";
         opacity: 1;
-      }
+    }
 
-      37.5% {
+    10% {
+        opacity: 0
+    }
+
+    20% {
+        content: "rare";
+        opacity: 1;
+    }
+
+    30.5% {
         opacity: 0;
-      }
+    }
 
-      50% {
+    40% {
         content: "custom";
         opacity: 1;
-      }
+    }
 
-      62.5% {
+    50% {
         opacity: 0;
-      }
+    }
 
-      75% {
-        content: "badass";
-        opacity: 1;;
-      }
+    60% {
+        content: "new";
+        opacity: 1;
+        ;
+    }
 
-      87.5% {
+    70% {
         opacity: 0;
-      }
+    }
 
-      100% {
+    80% {
+        content: "project";
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
         content: "classic";
         opacity: 1;
-      }
+    }
 }
 
 
-.ad--ford .ad__decoration {
+.ba--ford .ba__decoration {
     /* set background image to f150-1.jpg **/
-    background:url(f150-1.jpg);
-    background-repeat:no-repeat;
+    background: url(f150-1.jpg);
+    background-repeat: no-repeat;
 }
 
-.ad--ford .ad__copy .adjective::before {
-    animation: ford-adjectives-animate infinite 14s;
+.ba--ford .ba__copy .adjective::before {
+    animation: ford-adjectives-animate infinite 18s;
     animation-timing-function: ease-in-out;
 }
 
@@ -117,108 +130,116 @@
     max-width: 100%;
 }
 
-.ad--728w90h {
+.ba--728w90h {
     width: 728px;
     height: 90px;
 }
 
-.ad--728w90h .logo {
+.ba--728w90h .logo {
     width: 100px;
-    bottom:0px;
-    left:0px;
-    top:0px;
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
 }
 
-.ad--728w90h .ad__decoration {
-    width:360px;
-    height:90px;
+.ba--728w90h .ba__decoration {
+    width: 360px;
+    height: 90px;
     background-size: auto 300%;
     background-position: 30px 57%;
 }
 
-.ad--728w90h .ad__copy {
-    padding:10px;
+.ba--728w90h .ba__copy {
+    padding: 10px;
     transform: rotate(-7deg);
     position: relative;
-    left:20px;
-    top:8px;
+    left: 20px;
+    top: 5px;
 }
 
-.ad--728w90h .ad__copy h1{
+.ba--728w90h .ba__copy h1 {
     line-height: 22px;
+    font-size:22px;
 }
 
-.ad--728w90h .ad__copy .model{
-    line-height: 22px;
+.ba--728w90h .ba__copy .model {
+    padding-top:2px;
+    font-size:22px;
+    font-weight: 600;
     display: inline-block;
+    text-transform: uppercase;
 }
 
-.ad--728w90h .ad__copy .adjective{
+.ba--728w90h .ba__copy .adjective {
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     display: inline-block;
     line-height: 22px;
-    width:100px;
+    width: 100px;
     text-align: right;
 }
 
-.ad--728w90h .ad__copy .adjective::before {
-    padding-right:14px;
-    text-align: right;width:100px;
+.ba--728w90h .ba__copy .adjective::before {
+    text-align: right;
+    width: 100px;
     display: inline-block;
+    position: relative;
+    line-height: 24px;;
+    left: -10px;
+    top:-5px;
 }
 
-.ad--728w90h .ad__cta {
+.ba--728w90h .ba__cta {
     display: block;
-    height:90px;
+    height: 90px;
     text-align: center;
-    padding-top:30px;
-    position:absolute;
-    left:560px;
-    top:0px;
-    bottom:0px;
-    right:0px;
+    padding-top: 30px;
+    position: absolute;
+    left: 600px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
 }
 
-.ad--728w90h .ad__cta a {
+.ba--728w90h .ba__cta a {
     text-align: center;
 }
 
 
-.ad--300w250h {
+.ba--300w250h {
     width: 300px;
     height: 250px;
 }
 
-.ad--300w250h .logo {
+.ba--300w250h .logo {
     width: 100px;
 }
 
-.ad--300w600h {
+.ba--300w600h {
     width: 300px;
     height: 600px;
     flex-direction: column;
 }
 
-.ad--300w600h .logo {
+.ba--300w600h .logo {
     width: 100%;
 }
 
-.ad--970w250h {
+.ba--970w250h {
     width: 970px;
     height: 250px;
 }
 
-.ad--970w250h .logo {
+.ba--970w250h .logo {
     width: calc(970px / 3);
 }
 
-.ad--160w600h {
+.ba--160w600h {
     width: 160px;
     height: 600px;
     flex-direction: column;
 }
 
-.ad--160w600h .logo {
+.ba--160w600h .logo {
     width: 100%;
 }
