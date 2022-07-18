@@ -33,8 +33,8 @@
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 30px;
-    padding: 7px 15px;
-    margin: 0px 10px;
+    padding: 3px 15px;
+    font-weight:400;
 }
 
 .ba .ba__copy .adjective {
@@ -47,11 +47,14 @@
     font-family: 'Yellowtail', cursive;
     font-size: 34px;
     letter-spacing: 2px;
+    animation: fe-adjectives-animate infinite 14s;
+    animation-timing-function: ease-in-out;
 }
+
 
 /** First and Last keyframes need to be the same text for smoothness. **/
 
-@keyframes ford-adjectives-animate {
+@keyframes fe-adjectives-animate {
 
     0% {
         content: "classic";
@@ -105,30 +108,32 @@
     }
 }
 
+/** Make/Model Specific Stuff **/
 
+/** Ford **/
 .ba--ford .ba__decoration {
     /* set background image to f150-1.jpg **/
     background: url(f150-1.jpg);
     background-repeat: no-repeat;
 }
+/** End Ford **/
+/** End Make/Model Specific Stuff **/
 
-.ba--ford .ba__copy .adjective::before {
-    animation: ford-adjectives-animate infinite 18s;
-    animation-timing-function: ease-in-out;
-}
 
 .logo {
     background-color: #416438;
     max-width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
 }
 
 .logo img {
     max-width: 100%;
 }
+
+/** 728x90 Ad **/
 
 .ba--728w90h {
     width: 728px;
@@ -153,40 +158,40 @@
     padding: 10px;
     transform: rotate(-7deg);
     position: relative;
-    left: 20px;
+    left: 5px;
     top: 5px;
 }
 
 .ba--728w90h .ba__copy h1 {
     line-height: 22px;
-    font-size:22px;
+    font-size:20px;
 }
 
 .ba--728w90h .ba__copy .model {
     padding-top:2px;
-    font-size:22px;
+    font-size:20px;
     font-weight: 600;
     display: inline-block;
     text-transform: uppercase;
 }
 
 .ba--728w90h .ba__copy .adjective {
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
     display: inline-block;
-    line-height: 22px;
-    width: 100px;
+    line-height: 25px;
     text-align: right;
+    text-transform: capitalize;
 }
 
 .ba--728w90h .ba__copy .adjective::before {
     text-align: right;
-    width: 100px;
+    width: 120px;
     display: inline-block;
     position: relative;
     line-height: 24px;;
     left: -10px;
-    top:-5px;
+    top:0px;
 }
 
 .ba--728w90h .ba__cta {
@@ -204,6 +209,8 @@
 .ba--728w90h .ba__cta a {
     text-align: center;
 }
+
+/** End 728x90 Ad **/
 
 
 .ba--300w250h {
