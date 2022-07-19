@@ -37,9 +37,7 @@
     transition: 0.2s;
 }
 
-.ba:hover .ba__cta:hover a {
-    transform:scale(2);
-}
+
 
 .ba .ba__copy .adjective {
     font-family: 'Yellowtail', cursive;
@@ -158,6 +156,8 @@
     display: flex;
     align-items: center;
     position: absolute;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ba--728w90h .ba__decoration {
@@ -166,6 +166,8 @@
     background-size: auto 300%;
     background-position: 30px 57%;
     color: #f7f9fb;
+    /** Material Design Box Shadow On The Right **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ba--728w90h .ba__copy {
@@ -240,6 +242,8 @@
 
 .ba--300w250h .logo {
     width: 100px;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ba--300w250h .logo img{
@@ -305,11 +309,100 @@
     width: 300px;
     height: 600px;
     flex-direction: column;
+    /** Background Size the same as the thers **/
+    background-size: auto 100%;
+    background-position: top center;
 }
 
 .ba--300w600h .logo {
-    width: 100%;
+    position: absolute;
+    top:0%;
+    left:0px;
+    width: 100px;
+    background-color:#f7f9fb;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
+.ba--300w600h .logo img {
+    max-width: 100%;
+}
+
+.ba--300w600h .ba__copy .model {
+    position: absolute;
+    color:#f7f9fb;
+    text-transform: uppercase;
+    font-weight: 600;
+    top:40%;
+    left:0;
+    width:100%;
+    text-align: center;
+    font-size:48px;
+    /** Material Design Text Shadow **/
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.ba--300w600h .ba__cta {
+    /** Position absolute at the bottom, 300 px tall **/
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height:150px;
+    width:100%;
+    /** Material Design Box Shadow **/
+   /**  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset; **/
+    color: #fff!important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ba--300w600h .ba__cta a {
+    display: block;
+    width:80%;
+    text-align: center;
+    padding:10px 0px;
+    font-size:24px;
+}
+
+
+.ba--300w600h .ba__copy h1 {
+    position: absolute;
+    top:40px;
+    right:10px;
+    width:180px;
+    font-size:28px;
+    /** Same Transform as the others **/
+    transform: rotate(-7deg);
+}
+
+
+.ba--300w600h .ba__copy .adjective {
+
+    /** Same Position as The Others **/
+    position: absolute;
+    top:90px;
+    right:70px;
+
+ 
+    text-transform: capitalize;
+    /** Same Transform as the others **/
+    transform: rotate(-7deg);
+}
+
+.ba--300w600h .ba__copy .adjective::before {
+    font-size:42px;
+}
+
+.ba--300w600h .ba__copy .model {
+    font-size:48px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/** End 300x600 Ad **/
 
 .ba--970w250h {
     width: 970px;
