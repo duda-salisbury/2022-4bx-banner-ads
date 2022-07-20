@@ -521,6 +521,11 @@
     background-position: bottom;
 }
 
+.ba--160w600h.ba--ford.ba__decoration {
+    background-image:url(bronco-2.jpg);
+}
+
+
 .ba--160w600h .logo {
     width: 100%;
     /** Material Design Box Shadow **/
@@ -537,11 +542,11 @@
     color: #f7f9fb;
     text-transform: uppercase;
     font-weight: 600;
-    top: 205px;
+    top: 215px;
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 32px;
+    font-size: 42px;
     line-height: 47px;
     /** Material Design Text Shadow **/
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
