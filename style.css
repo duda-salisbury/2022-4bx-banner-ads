@@ -305,6 +305,8 @@
 
 /** End 300x250 Ad **/
 
+/** 300x600 Ad **/
+
 .ba--300w600h {
     width: 300px;
     height: 600px;
@@ -506,8 +508,72 @@
     width: 160px;
     height: 600px;
     flex-direction: column;
+    background-size: auto 100%;
+    background-position: bottom;
 }
 
 .ba--160w600h .logo {
     width: 100%;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.ba--160w600h .logo img {
+    max-width:72px;
+}
+
+.ba--160w600h .ba__copy .model {
+    position: absolute;
+    color:#f7f9fb;
+    text-transform: uppercase;
+    font-weight: 600;
+    top:50%;
+    margin-top:-24px;
+    left:0;
+    width:100%;
+    text-align: center;
+    font-size:48px;
+    line-height: 47px;
+    /** Material Design Text Shadow **/
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.ba--160w600h .ba__copy h1 {
+    background-color: #332C13;
+    color:#fff;
+    font-size:32px;
+    line-height: 32px;
+    padding:10px 5px;
+    text-align: center;
+}
+
+.ba--160w600h .ba__copy .adjective {
+    font-size:22px;
+    background-color: #f7f9fb;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding:10px 5px;
+    position: relative;
+    top:-5px;
+}
+
+.ba--160w600h .ba__copy .adjective::before {
+    box-sizing: border-box;
+    width: 100%;
+
+    display: inline-block;
+ 
+    text-align: center;
+
+}
+
+.ba--160w600h .ba__cta {
+    position: absolute;
+    width:100%;
+    bottom:50px;
+    left:0;
+    right:0;
+    text-align: center;
+    padding:10px 0px;
 }
