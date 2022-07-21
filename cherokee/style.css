@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Yellowtail&display=swap');
+
+.ba,
+.ba * {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ba h1,
+.ba h2,
+.ba h3,
+.ba h4,
+.ba h5,
+.ba h6 {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ba {
+    border: 1px solid #000;
+    background-color: #f7f9fb;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ba .ba__cta a {
+    background-color: #df5826;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 3px 15px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+
+
+.ba .ba__copy .adjective {
+    font-family: 'Yellowtail', cursive;
+
+}
+
+.ba .ba__copy .adjective::before {
+    content: "Classic";
+    font-family: 'Yellowtail', cursive;
+    color: #df5826;
+    font-size: 34px;
+    letter-spacing: 1px;
+    animation: fe-adjectives-animate infinite 12s;
+    animation-timing-function: ease-in-out;
+}
+
+
+/** First and Last keyframes need to be the same text for smoothness. **/
+
+@keyframes fe-adjectives-animate {
+
+    0% {
+        content: "classic";
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    20% {
+        content: "rare";
+        opacity: 1;
+    }
+
+    30.5% {
+        opacity: 0;
+    }
+
+    40% {
+        content: "custom";
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        content: "new";
+        opacity: 1;
+        ;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        content: "project";
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        content: "classic";
+        opacity: 1;
+    }
+}
+
+
+
+
+.logo {
+    background-color: #f7f9fb;
+
+    padding: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+/** Make/Model Specific Stuff **/
+
+/** cherokee **/
+.ba--cherokee .ba__decoration,
+.ba--cherokee.ba__decoration {
+    /* set background image to bronco-1.jpg **/
+    background-image: url(cherokee-2.jpg);
+    background-repeat: no-repeat;
+}
+
+/** End cherokee **/
+/** End Make/Model Specific Stuff **/
+
+
+
+
+/** 728x90 Ad **/
+
+.ba--728w90h {
+    width: 728px;
+    height: 90px;
+    background-color: #332C13;
+    display: flex;
+}
+
+.ba--728w90h.ba--cherokee .ba__decoration {
+    background-image: url(cherokee-2.jpg);
+    background-size:auto 500px;
+    background-repeat: no-repeat;
+    background-position: 30% -350px;
+}
+
+.ba--728w90h .logo {
+    width: 100px;
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+    background-color: #f7f9fb;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ba--728w90h .ba__decoration {
+    width: 360px;
+    height: 90px;
+    background-size: auto 300%;
+    background-position: 80px 35%;
+    color: #f7f9fb;
+    /** Material Design Box Shadow On The Right **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ba--728w90h .ba__copy {
+    padding: 10px;
+    transform: rotate(-7deg);
+    position: relative;
+    left: 15px;
+    top: 5px;
+    color: #f7f9fb;
+}
+
+.ba--728w90h .ba__copy h1 {
+    line-height: 22px;
+    font-size: 20px;
+}
+
+.ba--728w90h .ba__copy .model {
+    padding-top: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.ba--728w90h .ba__copy .adjective {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    line-height: 25px;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.ba--728w90h .ba__copy .adjective::before {
+    text-align: right;
+    width: 120px;
+    display: inline-block;
+    position: relative;
+    line-height: 24px;
+    ;
+    left: -10px;
+    top: 0px;
+}
+
+.ba--728w90h .ba__cta {
+    display: block;
+    height: 90px;
+    text-align: left;
+    padding-top: 30px;
+    position: absolute;
+    left: 600px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.ba--728w90h .ba__cta a {
+    text-align: center;
+}
+
+/** End 728x90 Ad **/
+
+
+/** 300x250 Ad **/
+.ba--300w250h {
+    width: 300px;
+    height: 250px;
+    /** Set the background size fit the parent **/
+    background-size: auto 200%;
+    background-position: bottom center;
+
+}
+
+
+.ba--300w250h .logo {
+    width: 100px;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ba--300w250h .logo img {
+    max-width: 100%;
+}
+
+.ba--300w250h .logo img {
+    width: 100px;
+}
+
+.ba--300w250h .ba__copy {
+    z-index: 1;
+}
+
+.ba--300w250h .ba__copy h1 {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 130px;
+    color: #fff;
+    font-size: 18px;
+    /** Same Transform as the others **/
+    transform: rotate(-7deg);
+}
+
+.ba--300w250h .ba__copy .adjective {
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    width: 140px;
+    font-size: 18px;
+    text-transform: capitalize;
+    /** Same Transform as the others **/
+    transform: rotate(-9deg);
+}
+
+.ba--300w250h .ba__copy .model {
+    position: absolute;
+    color: #f7f9fb;
+    text-transform: uppercase;
+    font-weight: 600;
+    top: 110px;
+    left: 0;
+    width: 90%;
+    text-align: right;
+    transform: rotate(-7deg);
+    font-size: 48px;
+    /** Material Design Text Shadow **/
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ba--300w250h .ba__cta {
+    width: 100;
+    left: 0px;
+    right: 0px;
+    top: 200px;
+    bottom: 0px;
+    text-align: center;
+    position: absolute;
+}
+
+/** End 300x250 Ad **/
+
+/** 300x600 Ad **/
+
+.ba--300w600h {
+    width: 300px;
+    height: 600px;
+    flex-direction: column;
+    /** Background Size the same as the thers **/
+    background-size: auto 100%;
+    background-position: top center;
+}
+
+.ba--300w600h .logo {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    width: 100px;
+    background-color: #f7f9fb;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ba--300w600h .logo img {
+    max-width: 100%;
+}
+
+.ba--300w600h .ba__copy .model {
+    position: absolute;
+    color: #f7f9fb;
+    text-transform: uppercase;
+    font-weight: 600;
+    top: 230px;
+    left: 0;
+    width: 90%;
+    font-size: 48px;
+    display: block;
+    /** Material Design Text Shadow **/
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: rotate(-7deg);
+    text-align: right;
+}
+
+.ba--300w600h .ba__cta {
+    /** Position absolute at the bottom, 300 px tall **/
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+    height: 150px;
+    width: 100%;
+    /** Material Design Box Shadow **/
+    /**  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset; **/
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ba--300w600h .ba__cta a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 22px;
+}
+
+
+.ba--300w600h .ba__copy h1 {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    width: 180px;
+    font-size: 28px;
+    color:#fff;
+    /** Same Transform as the others **/
+    transform: rotate(-7deg);
+}
+
+
+.ba--300w600h .ba__copy .adjective {
+
+    /** Same Position as The Others **/
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    width:150px;
+    text-align: center;
+
+    text-transform: capitalize;
+    /** Same Transform as the others **/
+    transform: rotate(-9deg);
+}
+
+.ba--300w600h .ba__copy .adjective::before {
+    font-size: 42px;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+}
+
+
+/** End 300x600 Ad **/
+
+/** 970x250 Ad **/
+.ba--970w250h {
+    width: 970px;
+    height: 250px;
+    background-color: #332C13;
+}
+
+.ba--970w250h .logo {
+    width: 150px;
+    height: 250px;
+    background-color: #f7f9fb;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+.ba--970w250h .ba__decoration {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: 150px;
+    background-size: auto 500px;
+    background-position: center bottom;
+}
+
+.ba--970w250h .ba__copy {
+    position: absolute;
+    top: 0px;
+    left: 550px;
+    right: 0px;
+    height: 250px;
+    display: flex;
+    color: #fff;
+    font-size: 32px;
+}
+
+.ba--970w250h .ba__copy h1 {
+    font-size: 32px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    /** Same Transform as the others **/
+    transform: rotate(-7deg);
+}
+
+.ba--970w250h .ba__copy .adjective {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 100px;
+    /** Same Transform as the others **/
+    transform: rotate(-7deg);
+}
+
+.ba--970w250h .ba__copy .adjective::before {
+    font-size: 42px;
+    text-align: right;
+    width: 100px;
+    display: inline-block;
+}
+
+.ba--970w250h .ba__copy .model {
+    position: absolute;
+    color: #f7f9fb;
+    text-transform: uppercase;
+    font-weight: 600;
+    top: 70px;
+    left: 40px;
+    width: 100%;
+    text-align: center;
+    transform: rotate(-7deg);
+    /** Material Design Text Shadow **/
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ba--970w250h .ba__cta {
+    top: 160px;
+    width: 150px;
+    right:50px;
+    text-align: right;
+    position: absolute;
+    width: 150px;
+}
+
+.ba--970w250h .ba__cta a {
+    display: inline-block;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: 150px;
+    text-align: center;
+}
+
+
+
+
+
+/** End 970x250 Ad **/
+
+.ba--160w600h {
+    width: 160px;
+    height: 600px;
+    flex-direction: column;
+    background-size: auto 110%;
+    background-position: center -60px;
+}
+
+.ba--160w600h.ba--cherokee.ba__decoration {
+    background-image:url(cherokee-2.jpg);
+    
+}
+
+
+.ba--160w600h .logo {
+    width: 100%;
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.ba--160w600h .logo img {
+    max-width: 72px;
+}
+
+.ba--160w600h .ba__copy .model {
+    position: absolute;
+    color: #f7f9fb;
+    text-transform: uppercase;
+    font-weight: 600;
+    top: 215px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    line-height: 47px;
+    /** Material Design Text Shadow **/
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ba--160w600h .ba__copy h1 {
+    background-color: #332C13;
+    color: #fff;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.ba--160w600h .ba__copy .adjective {
+    font-size: 22px;
+    background-color: #f7f9fb; 
+    /** Material Design Box Shadow **/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 5px;
+    position: relative;
+    top: -5px;
+}
+
+.ba--160w600h .ba__copy .adjective::before {
+    box-sizing: border-box;
+    width: 100%;
+
+    display: inline-block;
+
+    text-align: center;
+
+}
+
+.ba--160w600h .ba__cta {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.ba--160w600h .ba__cta a {
+    padding-top: 10px;
+    padding-bottom:10px;
+}
