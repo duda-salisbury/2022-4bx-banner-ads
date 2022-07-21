@@ -250,7 +250,8 @@
 }
 
 .ba--300w250h.ba--wrangler.ba__decoration {
-    background-image:url(wrangler-1.jpg);
+    background-image:url(wrangle-square.jpg);
+    background-position: center center;
 }
 
 
@@ -475,7 +476,7 @@
 .ba--970w250h .ba__copy .adjective {
     position: absolute;
     top: 85px;
-    left: 40px;
+    left: 30px;
     width: 190px;
     /** Same Transform as the others **/
     transform: rotate(-7deg);
@@ -530,7 +531,7 @@
     height: 600px;
     flex-direction: column;
     background-size: auto 115%;
-    background-position: center 10px;
+    background-position: 40% 15px;
     background-color:#332C13;
 }
 
