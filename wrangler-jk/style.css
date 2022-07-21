@@ -126,15 +126,15 @@
 
 /** Make/Model Specific Stuff **/
 
-/** cherokee **/
-.ba--cherokee .ba__decoration,
-.ba--cherokee.ba__decoration {
+/** wrangler **/
+.ba--wrangler .ba__decoration,
+.ba--wrangler.ba__decoration {
     /* set background image to bronco-1.jpg **/
-    background-image: url(cherokee-2.jpg);
+    background-image: url(wrangler-1.jpg);
     background-repeat: no-repeat;
 }
 
-/** End cherokee **/
+/** End wrangler **/
 /** End Make/Model Specific Stuff **/
 
 
@@ -149,11 +149,11 @@
     display: flex;
 }
 
-.ba--728w90h.ba--cherokee .ba__decoration {
-    background-image: url(cherokee-2.jpg);
-    background-size:auto 500px;
+.ba--728w90h.ba--wrangler .ba__decoration {
+    background-image: url(wrangler-1.jpg);
+    background-size:auto 300%;
     background-repeat: no-repeat;
-    background-position: 36% -350px;
+    background-position:30px center;
 }
 
 .ba--728w90h .logo {
@@ -245,12 +245,12 @@
     width: 300px;
     height: 250px;
     /** Set the background size fit the parent **/
-    background-position: center center;
+    background-size: auto 100%;
 
 }
 
-.ba--300w250h.ba--cherokee.ba__decoration {
-    background-image:url(cherokee-4.jpg);
+.ba--300w250h.ba--wrangler.ba__decoration {
+    background-image:url(wrangler-1.jpg);
 }
 
 
@@ -328,8 +328,8 @@
     height: 600px;
     flex-direction: column;
     /** Background Size the same as the thers **/
-    background-size: auto 100%;
-    background-position: top center;
+    background-size: auto 150%;
+    background-position: center top;
 }
 
 .ba--300w600h .logo {
@@ -365,7 +365,7 @@
 .ba--300w600h .ba__cta {
     /** Position absolute at the bottom, 300 px tall **/
     position: absolute;
-    bottom: 150px;
+    bottom: 10px;
     left: 0px;
     height: 150px;
     width: 100%;
@@ -449,7 +449,7 @@
     position: absolute;
     left: 150px;
     background-size: auto 500px;
-    background-position: center bottom;
+    background-position: center center;
 }
 
 .ba--970w250h .ba__copy {
@@ -530,12 +530,12 @@
     height: 600px;
     flex-direction: column;
     background-size: auto 115%;
-    background-position: center -100px;
+    background-position: center 10px;
     background-color:#332C13;
 }
 
-.ba--160w600h.ba--cherokee.ba__decoration {
-    background-image:url(cherokee-2.jpg);
+.ba--160w600h.ba--wrangler.ba__decoration {
+    background-image:url(wrangler-1.jpg);
     
 }
 
