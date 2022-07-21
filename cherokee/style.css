@@ -41,7 +41,7 @@
 
 .ba .ba__copy .adjective {
     font-family: 'Yellowtail', cursive;
-
+    text-transform: capitalize;
 }
 
 .ba .ba__copy .adjective::before {
@@ -212,11 +212,11 @@
 
 .ba--728w90h .ba__copy .adjective::before {
     text-align: right;
-    width: 120px;
+    width: 140px;
     display: inline-block;
+    font-size:30px;
     position: relative;
     line-height: 24px;
-    ;
     left: -10px;
     top: 0px;
 }
@@ -227,7 +227,7 @@
     text-align: left;
     padding-top: 30px;
     position: absolute;
-    left: 600px;
+    left: 630px;
     top: 0px;
     bottom: 0px;
     right: 0px;
@@ -474,17 +474,17 @@
 
 .ba--970w250h .ba__copy .adjective {
     position: absolute;
-    top: 80px;
+    top: 85px;
     left: 40px;
-    width: 100px;
+    width: 190px;
     /** Same Transform as the others **/
     transform: rotate(-7deg);
 }
 
 .ba--970w250h .ba__copy .adjective::before {
-    font-size: 48px;
+    font-size: 42px;
     text-align: right;
-    width: 100px;
+    width: 190px;
     display: inline-block;
 }
 
@@ -494,7 +494,7 @@
     text-transform: uppercase;
     font-weight: 600;
     top: 70px;
-    left: 40px;
+    left: 100px;
     width: 100%;
     text-align: center;
     transform: rotate(-7deg);
