@@ -87,7 +87,7 @@
     }
 
     60% {
-        content: "new";
+        content: "off-road";
         opacity: 1;
         ;
     }
@@ -153,7 +153,7 @@
     background-image: url(cherokee-2.jpg);
     background-size:auto 500px;
     background-repeat: no-repeat;
-    background-position: 30% -350px;
+    background-position: 36% -350px;
 }
 
 .ba--728w90h .logo {
@@ -183,7 +183,7 @@
     padding: 10px;
     transform: rotate(-7deg);
     position: relative;
-    left: 15px;
+    left: 5px;
     top: 5px;
     color: #f7f9fb;
 }
@@ -245,9 +245,12 @@
     width: 300px;
     height: 250px;
     /** Set the background size fit the parent **/
-    background-size: auto 200%;
-    background-position: bottom center;
+    background-position: center center;
 
+}
+
+.ba--300w250h.ba--cherokee.ba__decoration {
+    background-image:url(cherokee-4.jpg);
 }
 
 
@@ -479,7 +482,7 @@
 }
 
 .ba--970w250h .ba__copy .adjective::before {
-    font-size: 42px;
+    font-size: 48px;
     text-align: right;
     width: 100px;
     display: inline-block;
@@ -526,8 +529,9 @@
     width: 160px;
     height: 600px;
     flex-direction: column;
-    background-size: auto 110%;
-    background-position: center -60px;
+    background-size: auto 115%;
+    background-position: center -100px;
+    background-color:#332C13;
 }
 
 .ba--160w600h.ba--cherokee.ba__decoration {
@@ -576,7 +580,7 @@
     background-color: #f7f9fb; 
     /** Material Design Box Shadow **/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    padding: 10px 5px;
+    padding: 10px 0px;
     position: relative;
     top: -5px;
 }
