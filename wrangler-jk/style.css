@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Yellowtail&display=swap');
+html, html * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0px;
+    padding:0px;
+}
 
 .ba,
 .ba * {
@@ -20,7 +28,6 @@
 .ba {
     border: 1px solid #000;
     background-color: #f7f9fb;
-    margin: 20px;
     overflow: hidden;
     position: relative;
 }
@@ -539,7 +546,6 @@
     background-image:url(wrangler-1.jpg);
     
 }
-
 
 .ba--160w600h .logo {
     width: 100%;
